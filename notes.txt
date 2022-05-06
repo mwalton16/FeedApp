@@ -1,0 +1,12 @@
+py -3.7 -m venv .venv
+.\.venv\Scripts\Activate
+
+The requirements.txt file is a list of all of the libraries we will need for the project and their respective versions. Because these are installed through the terminal,
+and not through the code, other users of the code would not know what programs needed to be used. For simplicity and efficiency, the requirements.txt file lists the
+required libraries so someone else can just install all the required libraries with the following code:
+pip install -r requirements.txt
+
+The below code creates the database for the project, db.sqlite3.
+py manage.py migrate
+
+
