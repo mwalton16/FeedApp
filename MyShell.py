@@ -4,7 +4,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "FeedProject.settings")
 import django
 django.setup()
 
-from FeedApp.models import Profile,Relationship
+from FeedApp.models import Profile,Relationship, Post
 
 '''
 to install from requirements.txt
