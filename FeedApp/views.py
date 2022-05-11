@@ -109,7 +109,7 @@ def comments(request,post_id):
 
 @login_required
 def friends(request):
-    admin_profile = Profile.objects.get(user=1)
+    admin_profile = Profile.objects.get(user='admin')
     #admin_profile pulls the first user of the app, which is the admin
     user_profile = Profile.objects.get(user=request.user)
     user_friends = user_profile.friends.all()
